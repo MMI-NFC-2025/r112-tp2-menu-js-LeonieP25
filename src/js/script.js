@@ -11,5 +11,6 @@ toggle.addEventListener("click", () => {
   toggle.ariaExpanded = isClosed;
 
   body.classList.toggle("noscroll", isClosed);
+  
 });
 
