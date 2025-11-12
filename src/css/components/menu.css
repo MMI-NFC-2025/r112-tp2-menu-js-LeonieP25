@@ -3,7 +3,11 @@ On construit le menu tel qu'il sera une fois ouvert.
 On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le menu. */
 .menu {
   position: fixed; /* Fixe le menu en position, il ne défilera pas avec la page : https://developer.mozilla.org/fr/docs/Web/CSS/position#fixed */
-  background-color: #fff; /* Définit la couleur de fond du menu en blanc : https://developer.mozilla.org/fr/docs/Web/CSS/background-color */
+  background-color: #ffffff; /* Définit la couleur de fond du menu en blanc : https://developer.mozilla.org/fr/docs/Web/CSS/background-color */
+  background-image: url('/TP-Pracht_12-11.avif');
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
   display: flex; /* Utilise Flexbox pour la mise en page des éléments enfants : https://developer.mozilla.org/fr/docs/Web/CSS/display-inside#flex */
   top: 0; /* Positionne le menu en haut de la page : https://developer.mozilla.org/fr/docs/Web/CSS/top */
   bottom: 0; /* Étend le menu jusqu'en bas de la page */
@@ -28,10 +32,16 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
 .menu-btn {
   position: relative; /* Positionne le bouton par rapport à son conteneur parent */
   z-index: 3; /* Assure que le bouton est au-dessus des autres éléments */
-  width: 30px; /* Définit la largeur du bouton à 30px */
+  width: 9px; /* Définit la largeur du bouton à 30px */
   transition: all 0.4s ease-in-out; /* Ajoute une transition de 0.4 secondes pour toutes les propriétés, avec un effet d'accélération et de décélération */
 }
 
+.header__menu-btn {
+  background: none; /* Supprime le fond par défaut du bouton */
+  border: none; /* Supprime la bordure par défaut du bouton */
+  cursor: pointer; /* Change le curseur en pointeur lors du survol du bouton */
+  padding: 0; /* Supprime le padding par défaut du bouton */
+}
 /*
   "aria-expanded" géré par JavaScript pour l'ouverture et la fermeture.
  */
@@ -41,3 +51,29 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   ); /* Fait pivoter le bouton de menu de 90 degrés lorsqu'il est en état "expanded" */
 }
 
+.menu__link {
+  text-decoration: none;
+  color: #333;
+  border-radius: px;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.menu__list {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__link:hover {
+  background-color: #046feae2; /* léger fond bleu */
+  color: #ffffff; /* texte bleu plus foncé */
+  box-shadow: 0 1px 3px rgba(5, 15, 195, 0.625); /* petite ombre douce */
+  transform: translateY(-5px); /* effet de léger “soulevé” */
+}
+
+body{
+  background-image: url('/TP-Pracht_12-11.avif');
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
