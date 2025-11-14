@@ -5,8 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat 2</title>
   <link rel="stylesheet" href="../src/css/styles.css">
+  <link rel="stylesheet" href="../src/css/components/menu.css">
+  <script type="module" src="../src/js/script.js"></script>
 </head>
 <body>
+  <header class="header container">
+    <div class="header__end">
+      <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+        ▶
+      </button>
+
+      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="../cats/index.html">Les chats 🐈</a>
+            <ul>
+              <li><a href="chat-1.html">Chat Sphynx sans poil</a></li>
+              <li><a href="chat-2.html">Chaton de 6 semaines tacheté</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="../dogs/index.html">Les chiens 🐕</a>
+            <ul>
+              <li><a href="../dogs/chien-1.html">Kangal</a></li>
+              <li><a href="../dogs/chien-2.html">Husky sibérien</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <nav>
     <a href="index.html">Retour aux chats</a> | <a href="../index.html">Accueil</a>
   </nav>
