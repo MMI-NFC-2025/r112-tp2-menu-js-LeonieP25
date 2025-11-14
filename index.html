@@ -5,8 +5,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menu JS</title>
-  <link rel="stylesheet" href="/src/css/components/menu.css" />
-  <script type="module" src="/src/js/script.js"></script>
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/components/menu.css" />
+  <script type="module" src="src/js/script.js"></script>
 </head>
 
 <body>
@@ -18,19 +19,30 @@
 
       <nav class="header__menu menu" id="mainNav" aria-hidden="true">
         <ul class="menu__list list-unstyled">
-          <li class="menu__item"><a class="menu__link" href="#">Item de menu un</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Item de menu deux</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Item de menu trois</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Item de menu quatre</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="cats/index.html">Les chats</a>
+            <ul>
+              <li><a href="cats/chat-1.html">chat 1</a></li>
+              <li><a href="cats/chat-2.html">chat 2</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="dogs/index.html">Les chiens</a>
+            <ul>
+              <li><a href="dogs/chien-1.html">chien 1</a></li>
+              <li><a href="dogs/chien-2.html">chien 2</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est adipisci repellat aliquid, sit commodi facere
-      similique quidem iste sunt accusamus accusantium ab unde dolore quaerat voluptatibus error voluptatem molestiae?
+    <h1>Bienvenue sur la page des animaux ! </h1>
+      <p>Vous retrouverez ici plusieurs photos de chats et de chiens.
     </p>
+    <img class="media media--fullwidth" src="/cats/Chat_européen_noir_et_blanc.jpg" alt="Chat qui baille">
   </main>
 </body>
 </html>

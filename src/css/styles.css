@@ -9,3 +9,37 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+
+/* Image pleine largeur */
+.media--fullwidth {
+  width: 100%;
+  height: auto;
+}
+
+/* Icônes du menu en petit et à côté du texte */
+.menu__link::before {
+  content: url("/icones/bag-plus.svg");
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.menu__item ul li a::before {
+  content: url("../../public/icones/archive.svg");
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* Sous-listes */
+.menu__item ul {
+  list-style: none;
+  padding-left: 25px;
+  margin-top: 5px;
+}
+
+.list-unstyled {
+  list-style: none;
+}
