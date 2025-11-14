@@ -16,6 +16,19 @@ body {
   height: auto;
 }
 
+/* Conteneur pour images côte à côte */
+.image-container {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.image-container img {
+  width: 48%;
+  height: auto;
+  object-fit: cover;
+}
+
 /* Icônes du menu en petit et à côté du texte */
 .menu__link::before {
   content: url("/icones/bag-plus.svg");
